@@ -1,0 +1,555 @@
+:root {
+    --white: #fff;
+    --black: #222;
+    --pink: #f60091;
+    --grey: #444;
+    --grey2: #959595;
+    --grey-alt: #d1e2e9;
+    --yellow: #ffd800;
+    --green: #59b210;
+    --padding:80px;
+    --blue:#9ea2ac;
+  }
+/*end variable */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+} 
+body{
+    font-family: "hov sans", sans-serif;
+}
+img{
+    width:100%;
+}
+ul,
+li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding-left:15px;
+    padding-right:15px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*small screen*/
+@media (min-width:768px){
+    .container{
+        width:750px;
+    }
+}
+/*medium screen*/
+@media (min-width:992px){
+    .container{
+        width:970px;
+    }
+}
+/*large screen*/
+@media (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+.header .contant{
+    background-color:var(--grey-alt);
+    width:100%;
+    height:100vh;
+    z-index:1;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+
+}
+.header .contant{
+    display: flex;
+    justify-content:space-between;
+}
+.header .contant .logo{
+    padding:20px;
+    margin-left:60px;
+}
+.header .contant .logo a h2{
+   
+    color:#000;
+}
+.header .contant {
+    display: flex;
+    justify-content:space-between;
+}
+.header .contant nav ul {
+    padding: 20px;
+    display: flex;
+    margin-right: 114px
+}
+.header .contant nav ul li {
+margin-right: 20px;
+text-transform: capitalize;
+font-size: 17px;
+z-index: 100;
+}
+
+.header .container .background{
+    display: flex;
+    justify-content: space-between;
+}
+.header .container .background .head-text {
+    margin-top: 20%;
+    width:40%
+
+}
+.header .container .background .head-text h4{
+    font-size: 30px;
+    color:dodgerblue;
+    margin: 0;
+}
+.header .container .background .head-text h4 span{
+   color:var(--yellow);
+}
+.header .container .background .head-text h1{
+    font-size:50px;
+    margin:0;
+    color:#243a6f
+}
+.header .container .background .head-text button{
+    width: 170px;
+    height: 45px;
+    background-color:indianred;
+    border: none;
+    color: white;
+    margin-top: 30px;   
+    text-transform: capitalize;
+    font-size: 20px; 
+}
+.header .container .background .head-text button:hover{
+    background:transparent;
+    border:1px solid crimson;
+    color:crimson;
+    cursor:pointer;
+ }
+.header .container .background .head-img img {
+max-width:100%;
+margin-top:100px;    
+    
+}
+@media(max-width:768px){
+    .header .contant nav{
+        display: none;
+    }
+    .header .container .background{
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    .header {
+        background-color:var(--grey-alt);
+        width:100%;
+        height:auto;
+        z-index: -1;
+    }
+    .header .container .background .head-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .header .container .background .head-text {
+    margin-top: 20%;
+    width:100%
+
+}
+.header .container .background .head-img img {
+    max-width:100%;
+    margin-top:20px;    
+        
+    }
+}
+/*start features*/
+.features{
+    padding-top:var(--padding);
+    padding-bottom:var(--padding);
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+.features .content-features{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(360px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(250px,1fr));
+
+    grid-gap: 30px;
+}
+.features .content-features .feat{
+    grid-template-columns:50% 50%;
+    display: grid;
+    grid-gap: 10px;
+       overflow: hidden;
+   background-color:#a1d1df;
+   margin-bottom: 30px;
+
+}
+.features .content-features .feat:first-child{
+    background:#f5c5d1;
+
+}
+.features .content-features .feat:last-child{
+    background:#e5bc00;
+
+}
+
+    .features .content-features .feat span img{
+ 
+        margin-left:-65px;
+        width:300px;
+        height:250px;
+  }
+  .features .content-features .feat .text-center {
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+  }
+  .features .content-features .feat .text-center h2{
+    line-height: 30px;
+    margin-bottom:20px;
+   }
+   .features .content-features .feat .text-center p{
+       font-size: 14px;
+   }
+
+
+
+/************************end features**************/
+
+/********************* start Featured Products***********************/
+.Featured-Product{
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+.Featured-Products .content-Featured{
+    display:grid;
+grid-template-columns: repeat(auto-fill, minmax(23%,1fr));
+grid-gap: 2%;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+.Featured-Products .content-Featured  .Featured{
+    text-align: center;
+    transition: 0.7s;
+}
+.Featured-Products .content-Featured  .Featured  img{
+width:100%;
+z-index: 1;
+
+}
+.Featured-Products .content-Featured  .Featured  .img-hover{
+  position: relative;
+}
+.Featured-Products .content-Featured  .Featured  .img-hover::after{
+    content: "";
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background: rgb(0, 0, 0,0.7);
+    z-index: 2;
+    visibility: hidden;
+    opacity: 1;
+    
+  }
+  .Featured-Products .content-Featured  .Featured:hover .img-hover::after{
+visibility: visible;
+  }
+
+
+
+.Featured-Products .content-Featured  .Featured .text{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background:white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-bottom: 100px;
+
+
+}
+.Featured-Products > .speical-heading{
+    margin-top: 50px;
+    position: relative;
+    height: 20px;
+} 
+.Featured-Products .speical-heading::after{
+    content: "";
+    position: absolute;
+    left: 44%;
+    top: 120%;
+    width: 133px;
+    height: 3px;
+    background: #243a6f;
+    color: red;
+    }
+.Featured-Products .content-Featured  .Featured .text h2{ 
+  color:midnightblue;
+  font-weight: 300;
+}
+
+.Featured-Products .content-Featured  .Featured .text p{ 
+    color: midnightblue;
+    font-weight: 300;
+    font-size: 22px;
+    padding-top: 14px;
+    color:tomato
+  }
+  @media(max-width:768px){
+    .Featured-Products .content-Featured{
+        display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(80%,1fr));
+    grid-gap: 2%;
+    }
+  }
+/********************* end Featured Products***********************/
+/**********************start about*********************/
+
+.about .about-contant{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+    
+}
+.about .about-contant .card:last-child{
+   background:#243a6f;
+   text-align: center;
+   padding-top: 150px;
+ }
+ .about .about-contant .card h4{
+color: var(--grey-alt);
+ font-size: 30px;
+ }
+ .about .about-contant .card h4 span{
+    color: var(--yellow);
+    }
+ .about .about-contant .card h1{
+color: white;
+font-size:60px;
+
+}
+.about .about-contant .card button{
+    width: 170px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: white;
+    background:#fc7c7c;
+}
+ 
+.about .about-contant .card button:hover{
+    background:transparent;
+  border:1px solid #fc7c7c;
+  color:#fc7c7c;
+  cursor:pointer;
+}
+@media(max-width:767px){
+    .about .about-contant{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(98%,1fr));
+    } 
+    .about .about-contant .card button{
+       margin-bottom: 60px;
+    }
+}
+
+
+
+
+/**********************end about*********************/
+/**********************start team*********************/
+.teams{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.teams .teams-contant{
+  display: grid;
+  grid-gap: 2%;  grid-template-columns: repeat(auto-fill, minmax(31%,1fr));
+
+}
+.teams .teams-contant .team{
+background: #ddd;
+text-align: center;
+padding-top:40px;
+padding-bottom: 40px;
+display: flex;
+flex-direction: column;
+transition: 0.7s;
+}
+.teams .teams-contant .team:hover{
+  transform: translateY(-20px);
+}
+.teams .teams-contant .team p{
+    padding: 15px 25px ;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.teams .teams-contant .team img{
+   width:34%;
+   height:40%;
+   margin-left:35%;
+   border-radius: 50%;
+   transition: 0.7s;
+}
+.teams .teams-contant .team img:hover{
+ transform: rotate(360deg);
+}
+.teams .teams-contant .team span{
+    margin-top: 20px;
+    margin-bottom: 20px;}
+
+
+@media(max-width:768px){
+    .teams .teams-contant{
+        display: grid;
+        grid-gap: 2%;  grid-template-columns: repeat(auto-fill, minmax(98%,1fr));
+      
+      }
+}
+/**********************end team*********************/
+/************************start profile********************/
+.profile{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.profile .profile-conatant{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.profile .profile-conatant img{
+    padding:0 50px;
+    margin-bottom: 30PX;
+}
+@media(max-width:768px) {
+    .profile .profile-conatant{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/************************end profile********************/
+/************************start footer********************/
+footer{
+    background-color:var(--black);
+    color:white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+footer .footer-contant{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23%,1fr));
+
+}
+footer .footer-contant h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+
+
+}
+footer .footer-contant p{
+    line-height: 30px;
+
+}
+
+footer .footer-contant p:hover{
+color: var(--pink);
+cursor: pointer;
+}
+@media(max-width:768px) {
+    footer .footer-contant{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(98%,1fr));
+        text-align: center;
+    
+    }
+    footer .footer-contant .foot{
+        margin-bottom: 30px;
+        }
+        footer .footer-contant h2{
+            font-size: 32px;
+            margin-bottom: 20px;
+        
+        
+        }
+        footer .footer-contant p{
+            line-height: 30px;
+            font-size: 22px;
+        
+        }
+}
+
+/************************end fotter********************/
+/*start farmwork*/
+.btn{
+    width: 170px;
+    height: 45px;
+    background-color:indianred;
+    border: none;
+    color: white;
+    margin-top: 30px;   
+    text-transform: capitalize;
+    font-size: 20px; 
+}
+.btn-hover:hover{
+  background:transparent;
+  border:1px solid crimson;
+  color:crimson;
+  cursor:pointer;
+}
+.speical-heading{
+     text-align: center;
+     margin-bottom:40px;
+     position: relative;
+}
+.speical-heading::after{
+position: absolute;
+left:50%;
+top:0%;
+width:120px;
+height:2px;
+background: red;
+color:red
+}
+/*start farmwork*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,249 @@
+/*start variable*/
+:root{
+    --first-color: #ef7998;
+    --first-color-alt: #048654;
+    --title-color: #393939;
+    --text-color: #707070;
+    --text-color-light: #A6A6A6;
+    --body-color: #FBFEFD;
+    --container-color: #FFFFFF;
+    --transition: all 0.5s ease;
+   }
+/*end variable */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+} 
+body{
+    font-family: "open sans", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul,
+li{
+    list-style:none;
+}
+.container{
+    padding-left:15px;
+    padding-right:15px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*small screen*/
+@media (min-width:768px){
+    .container{
+        width:750px;
+    }
+}
+/*medium screen*/
+@media (min-width:992px){
+    .container{
+        width:970px;
+    }
+}
+/*large screen*/
+@media (min-width:1100px){
+    .container{
+        width:900px;
+        margin: 0 auto;
+    }
+}
+body{
+    font-family: sans-serif;
+}
+.crud{
+    background-image: url(../images/bg.jpg);
+    width: 100%;
+    min-height:100vh;
+    background-size: cover;
+    text-align: center;
+}
+.crud .overlay{
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+
+    min-height:100vh;
+}
+.crud input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: rgba(0,0,0,0.8);
+    margin-bottom: 20px;
+    text-indent: 10px;
+    border-radius: 4px;
+    /* color: white; */
+    background: rgba(255,255,255,0.);
+    color: darkslateblue;
+}
+.crud input:focus{
+    outline: none;
+}
+.crud  .box-container{
+    width: 100%;
+    min-height:100vh;
+    background-color: rgba(0,0,0,0.6);
+    padding:40px;
+
+}
+.crud  .box-container button{
+    border-radius: 5px;
+    width: 100%;
+    background: #8e44ad;
+    height: 40px;
+    border: none;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 15px;}
+.crud  .box-container h2{
+
+    color: crimson;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+.crud  .box-container p{
+    margin-bottom: 20px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.crud  .box-container .box-one{
+     display: flex;
+     flex-wrap: wrap;
+}
+.crud  .box-container .box-one input{
+    flex:19%;
+    margin-right: 1%;
+}
+.crud  .box-container .box-one p{
+    flex: 5%;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding-left: 10px;
+    display: flex;
+ background: rgba(0,0,0,0.8);
+
+
+    border-radius: 5px;
+
+}
+.box-five{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-between
+
+    
+}
+.box-five #btn-title{
+    background-color: #2980b9;
+    
+}
+
+.box-five #btn-category{
+    background-color: #e74c3c;
+
+}
+.box-five button{
+    flex-basis: 45%;
+    
+    ;
+}
+table{
+    width: 100%;
+    color:white;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.3);
+}
+table tr{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+table th{
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+table #update,
+table #delate{
+    border-radius: 5px;
+    width: 100%;
+    background: #8e44ad;
+    height: 25px;
+    border: none;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 10px;
+    }
+
+
+    table  tbody{
+       padding: 5px;
+    }
+    th,td{
+        padding: 5px;
+    }
+
+    button:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    #delete{
+
+         
+         display: none;
+    }table .main {
+        font-size: 18px;
+        margin-left: 20px;
+    
+    text-transform: capitalize;
+    } 
+    td {
+        padding: 4px;
+        font-size: 21px;
+        margin-left: 24px;
+    }
+
+@media (max-width:550px) {
+    
+    .crud .box-container {
+   
+        padding: 0; 
+    }
+    .crud .box-container .box-one input{
+        flex: 31%;
+    }
+   
+    table tr{
+        display: flex ;
+    }
+    td {
+        padding: 4px;
+        font-size: 6px;
+        margin-left: 0;
+    }
+    
+    table .main {
+        font-size: 5px;
+        margin-left:3px;
+    text-transform: capitalize;
+    } 
+    table {
+      
+        padding: 2px;
+    }
+    
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <!-- first mobile meta -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>cruds operation</title>
+    
+          <!-- main file for os-->
+          <link rel="stylesheet" href="css/style.css">
+          <!--file normailz-->
+          <link rel="stylesheet" href="css/Normalize.css">
+          <!--file all main-->
+          <link rel="stylesheet" href="css/all.min.css">
+
+ 
+    </head>
+    <body>
+     <section class="crud">
+        <div class="overlay">
+      <div class="box-container">
+        <div class="container">
+
+        <h2>CRUDS</h2>
+        <P>creat read update search</P>
+        <input id="title" type="text" placeholder="title">
+        <div class="box-one">
+            <input onkeyup="getTotal()" id="price" type="number" placeholder="price">
+            <input onkeyup="getTotal()" id="taxes" type="number" placeholder="taxes">
+            <input onkeyup="getTotal()" id="ads" type="number" placeholder="ads">
+            <input onkeyup="getTotal()" id="discount" type="number" placeholder="discount">
+            <p id="total">total : </p>
+        </div>
+            <input id="count" type="number" placeholder="count">
+
+            <input id="category" type="number" placeholder="category">
+            <button onclick="createPro()" id="create">create</button>
+            <input onkeyup="searchData(this.value)" id="search" type="search" placeholder="search">
+
+        <div class="box-five">
+            <button onclick="getSearchMethod(this.id)" id="searchTitle">search by title</button>
+            <button onclick="getSearchMethod(this.id)" id="searchCategory">search by category</button>
+
+        </div>
+        <button onclick="DelateAll()" id="delete">delate all</button>
+        <table>
+            <tr>
+                <th class="main">id</th>
+                <th class="main">title</th>
+                <th class="main">price</th>
+                <th class="main">taxes</th>
+                <th class="main">ads</th>
+                <th class="main">discount</th>
+                <th class="main">total</th>
+                <th class="main">category</th>
+                <th class="main">update</th>
+                <th class="main">delate</th>
+
+             
+           
+               <tbody id="tbody">
+              
+               </tbody>
+
+            </tr>
+        </table>
+      </div>
+     </div>
+    </div>
+     </section>
+<!-- Custom Javascript file -->
+<script src="custom.js"></script>
+</body>
+</html>
+
+
